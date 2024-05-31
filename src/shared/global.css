@@ -1,0 +1,93 @@
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+.fw500 {
+  font-weight: 500 !important;
+}
+.fw600 {
+  font-weight: 600 !important;
+}
+.fw700 {
+  font-weight: 700 !important;
+}
+.fs12 {
+  font-size: 12px !important;
+}
+.fs13 {
+  font-size: 13px !important;
+}
+.black {
+  color: #212121 !important;
+}
+.darkGrey {
+  color: #595656 !important;
+}
+.lightBlack {
+  color: #3a3541 !important;
+}
+.white {
+  color: #fff !important;
+}
+.blueColor {
+  color: #3b71ca !important;
+}
+.gray {
+  color: #c7c7cc !important;
+}
+.textCapital {
+  text-transform: uppercase !important;
+}
+.table-container {
+  overflow-x: clip;
+  width: 100% !important;
+  width: -webkit-fill-available !important ;
+}
+
+/* =================================== Elipses on lines ======================================= */
+.elipses-1,
+.elipses-2 {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+}
+.elipses-1 {
+  -webkit-line-clamp: 1 !important;
+}
+.elipses-2 {
+  -webkit-line-clamp: 2 !important;
+}
+/* ====================================== To contain UI ============================================= */
+.custom-container {
+  margin: 0 20px;
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-container {
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .custom-container {
+    margin: auto;
+    max-width: 1360px;
+  }
+}
+/* ================================== Hide Scroll bars ==================================== */
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

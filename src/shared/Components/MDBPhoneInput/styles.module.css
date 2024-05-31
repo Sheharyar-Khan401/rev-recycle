@@ -1,0 +1,27 @@
+.search-field {
+  margin: 0 0.3rem 0 0;
+}
+.search-field > input {
+  margin: 0 !important;
+  padding: 0.5rem !important;
+  width: 100% !important;
+}
+.search-field > input:focus {
+  border: 1.5px solid #3b71ca !important;
+}
+.input-field,
+.input-field-invalid {
+  width: 100% !important;
+  height: 45px !important;
+  border: 1px solid #bdbdbd !important;
+}
+.input-field:focus {
+  border: 1px solid #3b71ca !important;
+}
+.input-field-invalid:focus {
+  border: 1px solid #dc4c64 !important;
+  box-shadow: inset 0px 0px 0px 1px #dc4c64 !important;
+}
+.input-field-invalid {
+  border: 1px solid #dc4c64 !important;
+}

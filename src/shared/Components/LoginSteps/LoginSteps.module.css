@@ -1,0 +1,38 @@
+.text1 {
+  position: absolute;
+  top: 3.5rem;
+  font-size: 0.8rem;
+  left: 2%;
+}
+.text2 {
+  position: absolute;
+  top: 3.5rem;
+  left: 44%;
+  font-size: 0.8rem;
+}
+.text3 {
+  position: absolute;
+  top: 5.5rem;
+  left: 69%;
+  font-size: 0.8rem;
+}
+.container {
+  position: relative;
+  /* text-align: center; */
+  color: black;
+}
+.card1 {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  font-size: 0.9rem;
+}
+.shadow {
+  border: 2px solid #e5e5ea;
+  border-radius: 1.5rem;
+}
+.card {
+  box-shadow: 6px 12px 32px rgba(0, 0, 0, 0.12);
+  background: #e9e7ff;
+  border-radius: 1rem;
+}

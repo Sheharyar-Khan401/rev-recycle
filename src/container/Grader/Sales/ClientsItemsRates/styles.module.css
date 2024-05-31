@@ -1,0 +1,24 @@
+.Input{
+    width:24.6rem !important;   
+}
+.Input2{
+    width:19.9rem !important;   
+}
+@media (min-width:768px) and (max-width:990px) {
+    .Input{
+        width:11.8rem !important;   
+    }
+    .Input2{
+        width:10.3rem !important;   
+    }
+
+}
+@media(max-width:768px) {
+    .Input{
+        width:16.5rem !important;   
+    }
+    .Input2{
+        width:8.3rem !important;   
+    }
+
+}

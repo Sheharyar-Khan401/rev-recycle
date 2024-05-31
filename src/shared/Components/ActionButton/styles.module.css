@@ -1,0 +1,27 @@
+.container {
+  background: transparent !important;
+  padding: 0rem !important;
+  margin: 0 !important;
+}
+.btn,
+.btn-delete {
+  width: 100%;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 6px 1rem;
+  border: none;
+  background: none;
+  border-radius: 5px;
+}
+.btn-delete {
+  color: rgb(212, 94, 83);
+}
+.btn-delete:hover {
+  background: rgb(212, 94, 83, 0.1);
+}
+.btn:hover {
+  background: #e2e2e2;
+}

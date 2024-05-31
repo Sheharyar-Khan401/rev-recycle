@@ -1,0 +1,20 @@
+.table-d {
+    padding: 0.5rem !important;
+}
+
+.column {
+    font-size: 10px;
+    display: block;
+}
+
+@media print {
+    body {
+        margin-top: 1rem !important;
+    }
+
+    label {
+        position: fixed;
+        top: 1;
+        left: 2;
+    }
+}

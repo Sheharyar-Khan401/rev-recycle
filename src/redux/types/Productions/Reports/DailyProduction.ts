@@ -1,0 +1,35 @@
+export interface DailyProduction {
+  dailyProductionId: number;
+  itemCode: string;
+  unitCode: number;
+  categoryName: string;
+  labelType: string;
+  stockRoom: string;
+  brandItemCode: string;
+  itemName: string;
+  gradeName: string;
+  quantity: number;
+  unitOfMeasurement: string;
+  unitPieces: number;
+  weightKgs: number;
+  weightLbs: number;
+  amount: number;
+  amountkgs: number;
+  amountlbs: number;
+  prodRate: number;
+  prodValue: number;
+  saleOrderReference: string;
+  floorName: string;
+  departmentName: string;
+  date: number;
+  manPower: number;
+  lbsManPower: number;
+  variance: number;
+  budgetQty: number;
+  proQty: number;
+  packagingUnitName: string;
+  costPrice: number;
+  brandCode: number | string;
+  brandName: string;
+  brandItemName: string;
+}

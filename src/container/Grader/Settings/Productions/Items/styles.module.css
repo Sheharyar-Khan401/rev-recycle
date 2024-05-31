@@ -1,0 +1,8 @@
+.dataTable{
+    width: 74%;
+}
+@media (max-width:992px) {
+    .dataTable{
+        width: 95%;
+    }   
+}

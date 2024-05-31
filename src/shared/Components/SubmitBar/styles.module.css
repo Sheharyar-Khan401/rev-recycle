@@ -1,0 +1,22 @@
+.container {
+  position: sticky;
+  top: 0.1rem;
+  z-index: 1000;
+  margin-top: 1rem;
+}
+.btn-solid {
+  background: #3b71ca !important;
+  color: white !important;
+  font-size: 14px !important;
+  padding: 8px !important;
+}
+.btn-hollow {
+  border: 1px solid #e5e5ea !important;
+  color: #8e8e93 !important;
+  font-size: 14px !important;
+  padding: 8px !important;
+}
+.hr {
+  margin: 0;
+  height: 0.5px !important;
+}

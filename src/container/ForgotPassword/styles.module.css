@@ -1,0 +1,28 @@
+.form_size {
+  width: 25vw;
+}
+
+
+@media (max-width: 767px) {
+  .form_size {
+    width: 80vw !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .form_size {
+    width: 40vw !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .form_size {
+    width: 30vw !important;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .form_size {
+    width: 25vw !important;
+  }
+}

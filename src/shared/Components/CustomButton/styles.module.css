@@ -1,0 +1,48 @@
+.button,
+.button-solid,
+.button-hollow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0;
+  min-width: 5rem;
+  padding: 6px;
+}
+.button-solid {
+  background: #3b71ca;
+  transition: background-color 100ms ease-out 100ms;
+  color: white;
+  border: 2px solid #3b71ca;
+}
+.button-solid:hover:enabled {
+  background-color: #3769ba;
+  border: 2px solid #3769ba;
+
+}
+.button-hollow {
+  color: #3769ba;
+  background: #fff;
+  transition: background-color 100ms ease-out 100ms;
+  border: 2px solid #3b71ca;
+}
+.button-hollow:hover {
+  /* background-color: #f8f8f8; */
+}
+.button-content {
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.sm .button-content {
+  font-size: 12px;
+}
+.sm {
+  padding: 4px;
+  min-width: 4rem;
+}
+.button:disabled,
+.button-hollow:disabled,
+.button-solid:disabled {
+  opacity: 0.8;
+}

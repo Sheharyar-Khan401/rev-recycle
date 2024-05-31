@@ -1,0 +1,21 @@
+.validation {
+  font-size: smaller;
+  color: red;
+}
+.header-column {
+  font-weight: normal;
+}
+.actions-column,
+.header-column {
+  white-space: nowrap;
+}
+.header {
+  background: #fff;
+}
+.column {
+  width: max-content;
+  max-width: 200px;
+}
+.hr {
+  height: 0.5px !important;
+}

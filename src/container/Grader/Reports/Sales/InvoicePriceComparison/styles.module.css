@@ -1,0 +1,14 @@
+.header {
+  background: rgb(232, 236, 250);
+}
+.header-column {
+  font-weight: bold !important;
+  min-width: 100px;
+  max-width: 300px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.column {
+  width: max-content;
+  max-width: 200px;
+}

@@ -1,0 +1,139 @@
+.logo-container {
+  flex: 0 0 auto;
+  width: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.login-container {
+  flex: 0 0 auto;
+  width: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-or-text span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.img-container {
+  color: white;
+  background: linear-gradient(180deg, #007AFF 0%, #005BBE 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 7% 11% 10%;
+  height: 100vh;
+}
+
+.form_size {
+  width: 25vw;
+}
+
+.hr-lines {
+  position: relative;
+  max-width: 500px;
+  margin: 16px auto;
+  text-align: center;
+  color: #AEAEAE;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.hr-lines:before {
+  content: " ";
+  height: 1px;
+  width: 9vw;
+  background: #D8DADC;
+  display: block;
+  margin-left: 19px;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+
+.hr-lines:after {
+  content: " ";
+  height: 1px;
+  width: 9vw;
+  background: #D8DADC;
+  display: block;
+  position: absolute;
+  margin-right: 19px;
+  top: 50%;
+  right: 90%;
+  ;
+}
+
+@media (max-width: 767px) {
+  .logo-container {
+    display: none;
+  }
+
+  .login-container {
+    width: 100% !important;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .form_size {
+    width: 80vw !important;
+  }
+
+  .hr-lines:before {
+    width: 32vw;
+  }
+
+  .hr-lines:after {
+    width: 32vw;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+  .img_size {
+    width: 22rem;
+    height: 20rem;
+  }
+
+  .form_size {
+    width: 40vw !important;
+  }
+
+  .hr-lines:before {
+    width: 14vw;
+  }
+
+  .hr-lines:after {
+    width: 14vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+
+  .img_size {
+    width: 38vw;
+    height: 25.938rem;
+  }
+
+  .form_size {
+    width: 30vw !important;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1920px) {
+
+  .img_size {
+    width: 38vw;
+    height: 25.938rem;
+  }
+
+  .form_size {
+    width: 25vw !important;
+  }
+}

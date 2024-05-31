@@ -1,0 +1,6 @@
+.TotalAmountDiv{
+    background: #E0E6FF;
+    border: 1px solid #D5D5D5;
+    border-radius: 8px;
+    width: calc(33% - 10px);
+}

@@ -1,0 +1,269 @@
+/*================================== Scroll bars ===========================================*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: rgb(240, 240, 240);
+}
+
+::-webkit-scrollbar:hover {
+  background: rgb(240, 240, 240);
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  border-radius: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(216, 216, 216);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 14px;
+  background: rgb(190, 190, 190);
+}
+
+/*================================= fields styling ======================================*/
+input:focus {
+  outline: none;
+}
+
+.form-switch .form-check-input:checked[type="checkbox"] {
+  /* background: #34c759 !important; */
+}
+
+.form-switch .form-check-input:checked[type="checkbox"]:after {
+  background-color: white !important;
+}
+
+/* .react-tel-input .form-control {
+  padding-left: 48px !important;
+} */
+/*========================= invalid input field styling=======================================*/
+/* .react-tel-input .form-control.invalid-input {
+  border: 0.125rem solid red;
+  border-top: 0.125rem solid red;
+  border-right: 0.125rem solid red;
+  border-bottom: 0.125rem solid red;
+} */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/*================================= Remove shadow of button ===================================== */
+.btn-primary {
+  box-shadow: none !important;
+}
+
+/*================================= hide the dropdown arrow in topbar ===============================*/
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu.show {
+  z-index: 1001 !important;
+}
+
+/*==================================== table padding and font size ==========================*/
+.table {
+  margin-bottom: 0 !important;
+}
+
+/*===================================== sidebar styling ======================================= */
+#side-nav .scrollbar-container {
+  height: 70vh !important;
+}
+
+.sidenav.sidenav-shown {
+  transform: translateX(-13px) !important;
+}
+
+/*======================== button text capitalize =======================================*/
+.ripple-surface {
+  text-transform: capitalize !important;
+}
+
+/*========================== Margin bottom of invalid field ==============================*/
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  margin-bottom: 0rem !important;
+}
+
+/*============================== Editable databale heading font weight =============================*/
+.table-editor thead .fixed-cell {
+  font-weight: bold !important;
+}
+
+/*========================= Editable datatable select height ===================================*/
+.select-options-wrapper {
+  max-height: 150px !important;
+}
+
+/*=============================== date picker icon styling ======================================*/
+.datepicker-toggle-button {
+  padding-right: 0.5rem !important;
+  font-size: 1.4rem !important;
+}
+
+/*================================== Tabs styling =============================================*/
+.nav-tabs .nav-link {
+  margin: 0 1.5rem 0.5rem 0 !important;
+  padding: 0 !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  color: #3b71ca !important;
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold !important;
+  border-bottom: 3px solid #3b71ca !important;
+  padding-bottom: 0.2rem !important;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: transparent !important;
+}
+
+/*================================== Disable calender icon when MDBDatepicker is disabled ===========================*/
+.form-outline .form-control:disabled~.datepicker-toggle-button {
+  pointer-events: none !important;
+}
+
+/*======================================== Table Header Styles =============================*/
+
+.table-sm> :not(caption)>*>* {
+  white-space: nowrap;
+  padding: 0.5rem 16px;
+}
+
+/*======================================== Datatable Styles =============================*/
+#custom-datatable {
+  position: relative;
+  max-height: 470px;
+  overflow: auto;
+}
+
+.fixed-length-table>.table-responsive {
+  height: 470px;
+}
+
+#custom-datatable table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+#custom-datatable th {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: white;
+}
+
+/*======================================== Editable Datatable Styles =============================*/
+#custom-editabledatatable {
+  position: relative;
+  max-height: 470px;
+  overflow: auto;
+}
+
+#custom-editabledatatable table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+#custom-editabledatatable th {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: white;
+}
+
+/* ======================================= MDBSelect Styles ================================== */
+.select-input~.select-arrow::after {
+  /* padding-left: 5px !important; */
+  /* background-color: white !important; */
+}
+
+.select-option-text {
+  font-size: 13px !important;
+}
+
+.select-input[disabled]~.select-arrow {
+  pointer-events: none !important;
+}
+
+.select-input[disabled]~.select-arrow::after {
+  color: rgba(16, 16, 16, 0.3) !important;
+}
+
+.select-input.form-control[readonly] {
+  padding-right: 25%;
+}
+
+/* ========================================= MDBDatePicker ======================================= */
+.form-control:disabled~.datepicker-toggle-button>.fa-calendar::before {
+  color: rgba(16, 16, 16, 0.3) !important;
+}
+
+/* ========================================= Select Clear Button ======================================= */
+.select-clear-btn {
+  padding: 0 5px !important;
+}
+
+/*========================================== Range Picker Button ==================================== */
+.rmdp-action-button {
+  color: #3b71ca !important;
+  font-weight: 500 !important;
+}
+
+/*========================================== Range Picker spans  ==================================== */
+.rmdp-mobile .rmdp-day span {
+  /* color: #666; */
+  font-size: 13px !important;
+}
+
+.rmdp-mobile .rmdp-day span:hover {
+  background-color: lightgray !important;
+}
+
+.rmdp-day.rmdp-today span {
+  background-color: #3b71ca !important;
+  color: #fff !important;
+}
+
+.rmdp-week-day {
+  color: #3b71ca !important;
+}
+
+/*========================================== Range Picker Header ==================================== */
+.rmdp-header-values {
+  color: #666 !important;
+  font-weight: 500;
+}
+
+/*========================================== Range Picker Range ==================================== */
+.rmdp-range {
+  background-color: #3b71ca !important;
+}

@@ -1,0 +1,94 @@
+import { Floors } from "redux/types/common/floor";
+import { LabelTypesData } from "redux/types/Settings/Productions/labeltype";
+import { QuantityUnit } from "redux/types/common/quantityUnit";
+import { WeightUnit } from "redux/types/common/weightUnit";
+import { Department } from "redux/types/Settings/Productions/department";
+import { UserData } from "redux/types/Settings/user";
+import { purchaseOrderItemsResponse } from "redux/types/GatePasses/gatePasses";
+import { UnitOfMeasurement } from "redux/types/common/uom";
+import { Grade } from "redux/types/common/grade";
+import { Belt } from "redux/types/Settings/Productions/belt";
+import { Client } from "../Clients/Clients/client";
+import { Item } from "../Settings/Productions/items";
+export interface Codes {
+  codeId: number;
+  amount: number;
+  codeDate: number;
+  code: number;
+  tickets: number;
+  pieces: number;
+  description: string;
+  unitWeight: number;
+  labeltype?: LabelTypesData;
+  department?: Department;
+  grade?: Grade;
+  item?: Item;
+  floor?: Floors;
+  belt?: Belt;
+  weightUnit?: WeightUnit;
+  priQty: number;
+  secQty: number;
+  priUnit?: QuantityUnit;
+  unitSec?: QuantityUnit;
+  priQUnit: number;
+  labelTypeId: number;
+  departmentId: number;
+  gradeId: number;
+  itemId: number;
+  floorId: number;
+  worker?: UserData;
+  isPrint: boolean;
+  secUnitId: number;
+  wunitId: number;
+  isScanned: boolean;
+  creationDate: number;
+  createdBy?: UserData;
+  print?: boolean;
+  scanned?: boolean;
+  purchaseOrderItem?: purchaseOrderItemsResponse;
+  uom?: UnitOfMeasurement;
+  units: number;
+  productionIssuanceId?: number;
+  issuedOn?: number;
+  soUnits: number;
+  batch: number;
+  clientId: number;
+  client?: Client;
+}
+export interface CodeRequest {
+  codeId?: number;
+  codeDate: string;
+  tickets?: number;
+  pieces?: number;
+  description: string;
+  unitWeight?: number;
+  priQUnit?: number;
+  labelTypeId?: number;
+  departmentId?: number;
+  gradeId?: number;
+  itemId?: number;
+  floorId?: number;
+  workerId?: number;
+  isPrint: boolean;
+  wunitId?: number;
+  secUnitId?: number;
+  isScanned: boolean;
+  batch?: number;
+  clientId?: number;
+}
+export interface CodesData extends Record<string, number | string | boolean> {
+  codeId: number;
+  code: number;
+  itemId: number;
+  item: string;
+  codeDate: string;
+  creationDate: string;
+  saleOderId: number;
+  stockRoomId: number;
+}
+export interface CodesCount {
+  numberOfCodes: number;
+  department: string;
+  labelType: string;
+  category: string;
+}

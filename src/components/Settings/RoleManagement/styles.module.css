@@ -1,0 +1,43 @@
+.side-nav {
+  box-shadow: none !important;
+  z-index: 0 !important;
+  width: 14rem !important;
+}
+
+.side-nav-item {
+  font-weight: bold;
+}
+
+.side-nav-link-active {
+  font-weight: bold;
+  background-color: #5280221a !important;
+}
+
+.form-check-input[type="radio"]:checked:after {
+  z-index: auto !important;
+}
+
+.MdbSpinnerContainer {
+  top: 50%;
+  left: 50%;
+  border: #5280221a solid 1px;
+}
+
+.side-nav {
+  box-shadow: none !important;
+  z-index: 0 !important;
+}
+
+.side-nav-item {
+  font-weight: bold;
+}
+
+.marginBottom {
+  margin-bottom: -2rem !important;
+}
+
+@media (max-width: 766px) {
+  .permissions {
+    margin-top: 15rem;
+  }
+}

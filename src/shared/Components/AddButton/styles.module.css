@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin: 0;
+  background: #3b71ca;
+  transition: background-color 100ms ease-out 100ms;
+  color: white;
+  border: 1px solid #3b71ca;
+  width: 33px;
+  height: 33px;
+}
+.button:hover {
+  background-color: #3769ba;
+}
+.sm {
+  width: 29px;
+  height: 29px;
+}
+.button:disabled {
+  opacity: 0.8;
+}

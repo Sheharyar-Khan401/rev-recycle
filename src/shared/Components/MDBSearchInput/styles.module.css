@@ -1,0 +1,13 @@
+.search input {
+  border: none;
+  margin-left: 5px;
+  width: 15rem;
+}
+.search div:has(input:focus) {
+  border: 1px solid gray !important;
+}
+.search div {
+  display: flex;
+  align-items: center;
+  padding-left: 10px !important;
+}
