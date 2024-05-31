@@ -1,0 +1,59 @@
+image: node:16
+pipelines:
+  branches:
+    staging:
+      - step:
+          name: Build the app
+          caches:
+            - node
+          script:
+            - export CI=false
+            - echo "REACT_APP_ROOT_URL=https://stageapi.revrecycle.com/v1" >> .env
+            - yarn install
+            - yarn build
+          artifacts:
+            - build/**
+      - step:
+          name: Deploying to S3 Bucket
+          oidc: true
+          deployment: staging
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.5.0
+              variables:
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                AWS_OIDC_ROLE_ARN: '$AWS_OIDC_ROLE_ARN'
+                S3_BUCKET: '$S3_BUCKET'
+                LOCAL_PATH: 'build'
+            - pipe: atlassian/aws-cloudfront-invalidate:0.5.0
+              variables:
+                AWS_OIDC_ROLE_ARN: $AWS_OIDC_ROLE_ARN
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                DISTRIBUTION_ID: 'E1T21Y514DNGH4'
+    master:
+      - step:
+          name: Build the app
+          caches:
+            - node
+          script:
+            - export CI=false
+            - echo "REACT_APP_ROOT_URL=https://api.revrecycle.com/v1" >> .env
+            - yarn install
+            - yarn build
+          artifacts:
+            - build/**
+      - step:
+          name: Deploying to S3 Bucket
+          oidc: true
+          deployment: production
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.5.0
+              variables:
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                AWS_OIDC_ROLE_ARN: '$AWS_OIDC_ROLE_ARN'
+                S3_BUCKET: '$S3_BUCKET'
+                LOCAL_PATH: 'build'
+            - pipe: atlassian/aws-cloudfront-invalidate:0.5.0
+              variables:
+                AWS_OIDC_ROLE_ARN: $AWS_OIDC_ROLE_ARN
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                DISTRIBUTION_ID: 'E26O80ZAW6VGD2'
